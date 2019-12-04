@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+    <ListView
+        android:id="@+id/contactList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="300dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorGrey"
+        android:clickable="true"
+        android:onClick="userDetails"
+        android:src="@drawable/user"
+        app:backgroundTint="@color/colorGrey"
+        tools:ignore="OnClick" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnScanCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="230dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorGrey"
+        android:clickable="true"
+        android:onClick="scanCard"
+        android:src="@drawable/card"
+        app:backgroundTint="@color/colorGrey"
+        tools:ignore="OnClick" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="150dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorGrey"
+        android:clickable="true"
+        android:onClick="scanQR"
+        android:src="@drawable/scan"
+        app:backgroundTint="@color/colorGrey"
+        tools:ignore="OnClick" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnqrCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/btnScan"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorGrey"
+        android:clickable="true"
+        android:onClick="generateQR"
+        android:src="@drawable/qrcode"
+        app:backgroundTint="@color/colorGrey"
+        tools:ignore="OnClick" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnlogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/btnScan"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorGrey"
+        android:clickable="true"
+        android:onClick="logout"
+        android:src="@drawable/logout"
+        app:backgroundTint="@color/colorGrey"
+        tools:ignore="OnClick" />
+
+</RelativeLayout>

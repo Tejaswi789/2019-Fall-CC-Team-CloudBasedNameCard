@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context=".UserDetails">
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/txtPhone"
+        android:inputType="text"
+        android:hint="Phone"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"/>
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:inputType="text"
+        android:hint="Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtPhone"/>
+
+    <EditText
+        android:id="@+id/txtAddress"
+        android:inputType="text"
+        android:hint="Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtEmail"/>
+
+    <Button
+        android:id='@+id/btnSave'
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAddress"
+        android:layout_centerHorizontal="true"
+        android:text="Save"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorGreen"
+        android:onClick="save"/>
+    <Button
+        android:id='@+id/btnGenerateQR'
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSave"
+        android:layout_centerHorizontal="true"
+        android:text="Generate QR"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorGreen"
+        android:onClick="generateQR"/>
+
+    <ImageView
+        android:id="@+id/qrView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btnGenerateQR"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorGrey"
+        android:clickable="true"
+        android:onClick="home"
+        android:src="@drawable/home"
+        app:backgroundTint="@color/colorGrey"
+        tools:ignore="OnClick" />
+
+</RelativeLayout>
